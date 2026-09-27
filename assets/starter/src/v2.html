@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>线的另一面 · Parallax Ink V3</title>
+<style>
+  :root{color-scheme:light;font-family:ui-sans-serif,-apple-system,"Noto Sans CJK SC",sans-serif;background:#efe8dc;color:#262b32}
+  *{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 20% 0%,#faf7ef,#e7decd)}
+  main{display:flex;gap:28px;align-items:flex-start;justify-content:center;padding:24px}
+  canvas#art{display:block;width:min(64vh,calc(100vw - 36px));aspect-ratio:9/16;background:#f5efe3;box-shadow:0 25px 80px #4037243b}
+  aside{width:290px;max-width:100%;padding:20px;background:#fffaf3de;border:1px solid #d6c8b4}
+  aside h1{font-family:Georgia,"Noto Serif CJK SC",serif;font-size:30px;font-weight:400;line-height:1.2;margin:5px 0 8px}
+  aside p{font-size:13px;line-height:1.6;color:#666056}
+  button{background:#292d36;color:white;border:0;padding:10px 14px;cursor:pointer;font-size:13px;margin:4px 4px 4px 0}
+  button.secondary{background:#e6dbca;color:#292d36}input[type=range]{width:100%;accent-color:#d87035}
+  .tiny{font-size:11px;color:#928675}.meter{font-variant-numeric:tabular-nums}
+  @media(max-width:850px){main{flex-direction:column;align-items:center;padding:10px}aside{width:min(64vh,calc(100vw - 36px));padding:12px}canvas#art{width:min(64vh,calc(100vw - 36px))}}
+  body.render{background:#f5efe3}body.render main{padding:0}body.render aside{display:none}body.render canvas#art{width:100vw;height:100vh;box-shadow:none}
+</style>
+<script>window.INK_V2_DATA=/*__DATA__*/;</script>
+</head>
+<body>
+<main><canvas id="art" width="1080" height="1920"></canvas>
+<aside>
+  <div class="tiny">PARALLAX / INK · V3</div><h1>线的另一面</h1>
+  <p>彩色绘画的不同笔层在三维空间中展开、穿梭，再重新拼成完整的主体。</p>
+  <button id="play">▶ 播放</button><button id="sound" class="secondary">♪ 声音开</button>
+  <input id="seek" type="range" min="0" max="36" step=".01" value="0">
+  <div class="meter" id="clock">00:00 / 00:36</div>
+  <p>拖动画面可从当前时刻自由观察；双击回到影片视角。</p>
+  <div class="tiny" id="status">正在装载绘画层…</div>
+</aside></main>
+<script>/*__ENGINE__*/</script>
+</body></html>
