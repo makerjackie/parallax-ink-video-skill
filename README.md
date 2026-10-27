@@ -35,3 +35,7 @@ python tools/render.py --html output/parallax-ink.html --audio assets/music.mp3 
 - 彩色手绘底稿需要图像生成或编辑能力；复杂背景、白毛和低对比图像可能需要人工调整分层。
 - 三维效果来自透明绘画层与镜头透视，不是从单张照片恢复真实三维模型。
 - [已验证示例](references/verified-example.md) 只说明做过的有限测试，不保证任意图像自动得到同等效果。
+
+## 免费开源
+
+本 Skill 与原创渲染工具以 MIT 许可证免费开源，见 [LICENSE](LICENSE)。模型额度及外部素材费用自备，第三方素材遵循各自许可。
